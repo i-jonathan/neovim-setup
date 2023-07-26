@@ -12,7 +12,10 @@ local plugins = {
         "debugpy",
         "mypy",
         "ruff",
-        "pyright"
+        "pyright",
+				"quick-lint-js",
+				"prettierd",
+				"typescript-language-server"
       }
     }
   },
@@ -71,7 +74,7 @@ local plugins = {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = {"python", "go"},
+    ft = {"python", "go", "javascript"},
     opts = function ()
       return require "custom.configs.null-ls"
     end
